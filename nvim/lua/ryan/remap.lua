@@ -40,4 +40,8 @@ vim.keymap.set("n", "<C-Right>", ":vertical resize +2<CR>")
 
 vim.keymap.set("n", "<S-l>", ":bnext<CR>")
 vim.keymap.set("n", "<S-h>", ":bprevious<CR>")
+
+vim.keymap.set("n", "<leader>tn", ":tabnew<CR>")
+vim.keymap.set("n", "<leader>td", ":tabclose<CR>")
+
 vim.opt.termguicolors = true

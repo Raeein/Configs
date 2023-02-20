@@ -4,16 +4,21 @@ return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
     use "nvim-lua/plenary.nvim"
     use 'ThePrimeagen/vim-be-good'
-    use {
-        'nvim-telescope/telescope.nvim', tag = '0.1.1',
-        requires = { {'nvim-lua/plenary.nvim'} }
-    } 
     use { "catppuccin/nvim", as = "catppuccin" }
     use ( 'nvim-treesitter/nvim-treesitter', {run = 'TSUpdate'})
     use 'nvim-treesitter/playground'
     use 'ThePrimeagen/harpoon'
     use 'mbbill/undotree'
     use 'tpope/vim-fugitive'
+    use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
+    use 'JoosepAlviste/nvim-ts-context-commentstring'
+    use 'akinsho/toggleterm.nvim'
+    use 'nvim-tree/nvim-web-devicons' use 'andweeb/presence.nvim'
+    use 'github/copilot.vim'
+    use {
+        'nvim-telescope/telescope.nvim', tag = '0.1.1',
+        requires = { {'nvim-lua/plenary.nvim'} }
+    } 
     use {
         'lewis6991/gitsigns.nvim',
         config = function()
@@ -62,8 +67,4 @@ return require('packer').startup(function(use)
             require('Comment').setup()
         end
     }
-    use 'JoosepAlviste/nvim-ts-context-commentstring'
-    use 'akinsho/toggleterm.nvim'
-    use 'nvim-tree/nvim-web-devicons' 
-    use 'andweeb/presence.nvim'
 end)
