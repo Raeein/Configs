@@ -1,0 +1,15 @@
+.mono/
+NuGet/
+chameleon/
+configstore/
+gcloud/
+github-copilot/
+iterm2/
+neofetch/
+omf/
+qBittorrent/
+rstudio/
+stetic/
+wireshark/
+xbuild/
+.DS_Store

@@ -1,2 +1,3 @@
 require("ryan")
-print("hello")
+vim.cmd('autocmd VimEnter * NvimTreeToggle')
+vim.o.t_Co = 256
