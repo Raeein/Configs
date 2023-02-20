@@ -50,8 +50,20 @@ return require('packer').startup(function(use)
         'nvim-tree/nvim-tree.lua',
         requires = {
             'nvim-tree/nvim-web-devicons', -- optional, for file icons
-        },
+        }
     }
+    use {
+        "windwp/nvim-autopairs",
+        config = function() require("nvim-autopairs").setup {} end
+    }
+    use {
+        'numToStr/Comment.nvim',
+        config = function()
+            require('Comment').setup()
+        end
+    }
+    use 'JoosepAlviste/nvim-ts-context-commentstring'
+    use 'akinsho/toggleterm.nvim'
     use 'nvim-tree/nvim-web-devicons' 
     use 'andweeb/presence.nvim'
 end)
