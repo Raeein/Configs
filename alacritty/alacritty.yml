@@ -8,7 +8,7 @@ env:
 # Terminal Window Settings
 window:
   # Opacity
-  opacity: 0.96
+  opacity: 1.0
   # Padding
   padding:
     x: 8

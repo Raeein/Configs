@@ -42,6 +42,9 @@ vim.keymap.set("n", "<S-l>", ":bnext<CR>")
 vim.keymap.set("n", "<S-h>", ":bprevious<CR>")
 
 vim.keymap.set("n", "<leader>tn", ":tabnew<CR>")
-vim.keymap.set("n", "<leader>td", ":tabclose<CR>")
+vim.keymap.set("n", "<leader>tc", ":tabclose<CR>")
+
+vim.keymap.set("n", "<leader>ss", ":mksession! ~/.config/nvim/session.vim<CR>")
+vim.keymap.set("n", "<leader>sr", ":source ~/.config/nvim/session.vim<CR>")
 
 vim.opt.termguicolors = true

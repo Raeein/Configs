@@ -13,7 +13,8 @@ return require('packer').startup(function(use)
     use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
     use 'JoosepAlviste/nvim-ts-context-commentstring'
     use 'akinsho/toggleterm.nvim'
-    use 'nvim-tree/nvim-web-devicons' use 'andweeb/presence.nvim'
+    use 'nvim-tree/nvim-web-devicons' 
+    use 'andweeb/presence.nvim'
     use 'github/copilot.vim'
     use {
         'nvim-telescope/telescope.nvim', tag = '0.1.1',

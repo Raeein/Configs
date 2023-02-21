@@ -1,4 +1,5 @@
 .mono/
+session.vim
 NuGet/
 chameleon/
 configstore/
