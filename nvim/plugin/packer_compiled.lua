@@ -198,8 +198,9 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
   ["packer.nvim"] = {
-    loaded = true,
-    path = "/Users/raeeinbagheri/.local/share/nvim/site/pack/packer/start/packer.nvim",
+    loaded = false,
+    needs_bufread = false,
+    path = "/Users/raeeinbagheri/.local/share/nvim/site/pack/packer/opt/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
   playground = {
@@ -227,6 +228,11 @@ _G.packer_plugins = {
     path = "/Users/raeeinbagheri/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
     url = "https://github.com/akinsho/toggleterm.nvim"
   },
+  ["tokyonight.nvim"] = {
+    loaded = true,
+    path = "/Users/raeeinbagheri/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
+    url = "https://github.com/folke/tokyonight.nvim"
+  },
   undotree = {
     loaded = true,
     path = "/Users/raeeinbagheri/.local/share/nvim/site/pack/packer/start/undotree",
@@ -241,6 +247,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/raeeinbagheri/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["vim-startify"] = {
+    loaded = true,
+    path = "/Users/raeeinbagheri/.local/share/nvim/site/pack/packer/start/vim-startify",
+    url = "https://github.com/mhinz/vim-startify"
   }
 }
 

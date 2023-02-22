@@ -1,7 +1,7 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
-    use 'wbthomason/packer.nvim'
+    use { 'wbthomason/packer.nvim', opt = true }
     use "nvim-lua/plenary.nvim"
     use 'ThePrimeagen/vim-be-good'
     use { "catppuccin/nvim", as = "catppuccin" }
@@ -16,6 +16,8 @@ return require('packer').startup(function(use)
     use 'nvim-tree/nvim-web-devicons' 
     use 'andweeb/presence.nvim'
     use 'github/copilot.vim'
+    use 'folke/tokyonight.nvim'
+    use 'mhinz/vim-startify'
     use {
         'nvim-telescope/telescope.nvim', tag = '0.1.1',
         requires = { {'nvim-lua/plenary.nvim'} }
