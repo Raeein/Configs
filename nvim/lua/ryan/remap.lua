@@ -1,6 +1,8 @@
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
+vim.keymap.set("n", "<leader>qq", "<cmd>wqa<cr>", { desc = "Quit all" })
+
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
@@ -12,6 +14,7 @@ vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
 vim.keymap.set("x", "<leader>p", [["_dP]])
+
 vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
 
@@ -19,6 +22,14 @@ vim.keymap.set({"n", "v"}, "<leader>d", [["_d]])
 
 vim.keymap.set("i", "jk", "<ESC>")
 vim.keymap.set("i", "kj", "<ESC>")
+
+vim.keymap.set("n", "B", "^")
+vim.keymap.set("n", "E", "$")
+
+vim.keymap.set("i", "<C-h>", "<Left>")
+vim.keymap.set("i", "<C-j>", "<Down>")
+vim.keymap.set("i", "<C-k>", "<Up>")
+vim.keymap.set("i", "<C-l>", "<Right>")
 
 vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
 
@@ -44,7 +55,10 @@ vim.keymap.set("n", "<S-h>", ":bprevious<CR>")
 vim.keymap.set("n", "<leader>tn", ":tabnew<CR>")
 vim.keymap.set("n", "<leader>tc", ":tabclose<CR>")
 
-vim.keymap.set("n", "<leader>ss", ":mksession! ~/.config/nvim/session.vim<CR>")
-vim.keymap.set("n", "<leader>sr", ":source ~/.config/nvim/session.vim<CR>")
+-- vim.keymap.set("n", "<leader>ss", ":mksession! ~/.config/nvim/session.vim<CR>")
+-- vim.keymap.set("n", "<leader>sr", ":source ~/.config/nvim/session.vim<CR>")
+
+vim.keymap.set("n", "<leader>fml", "<cmd>CellularAutomaton make_it_rain<CR>")
+vim.keymap.set("n", "<leader>fc", ":lua vim.lsp.buf.format({ timeout_ms = 2000 })<CR>")
 
 vim.opt.termguicolors = true

@@ -18,6 +18,8 @@ return require('packer').startup(function(use)
     use 'github/copilot.vim'
     use 'folke/tokyonight.nvim'
     use 'mhinz/vim-startify'
+    use 'eandrju/cellular-automaton.nvim'
+    use 'jose-elias-alvarez/null-ls.nvim'
     use {
         'nvim-telescope/telescope.nvim', tag = '0.1.1',
         requires = { {'nvim-lua/plenary.nvim'} }
