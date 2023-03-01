@@ -14,3 +14,4 @@ stetic/
 wireshark/
 xbuild/
 .DS_Store
+node_modules/

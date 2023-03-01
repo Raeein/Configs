@@ -1,9 +1,11 @@
 local status_ok, telescope = pcall(require, "telescope")
 local builtin = require('telescope.builtin')
 
+require("telescope").load_extension("neoclip")
+-- require("telescope").load_extension("fzf")
+
 telescope.setup {
     defaults = {
-
         prompt_prefix = " ",
         selection_caret = "  ",
         path_display = { "smart" },
@@ -17,6 +19,7 @@ telescope.setup {
         },
     },
 }
+
 
 vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
 vim.keymap.set('n', '<leader>fb', builtin.buffers, {})

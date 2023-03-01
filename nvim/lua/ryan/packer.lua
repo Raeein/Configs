@@ -20,6 +20,40 @@ return require('packer').startup(function(use)
     use 'mhinz/vim-startify'
     use 'eandrju/cellular-automaton.nvim'
     use 'jose-elias-alvarez/null-ls.nvim'
+    use 'xiyaowong/nvim-transparent'
+    use { 'junegunn/fzf', run = ":call fzf#install()" }
+    use { 'junegunn/fzf.vim' }
+    use 'airblade/vim-rooter'
+    use 'ggandor/lightspeed.nvim'
+    use {"ellisonleao/glow.nvim", config = function() require("glow").setup() end}
+    use {"folke/zen-mode.nvim"}
+    use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
+    use {
+
+        'brenoprata10/nvim-highlight-colors',
+        config = function()
+            require('nvim-highlight-colors').setup()
+        end,
+    }
+    use {
+        'kosayoda/nvim-lightbulb',
+        requires = 'antoinemadec/FixCursorHold.nvim',
+    }
+    use {
+        "AckslD/nvim-neoclip.lua",
+        requires = {
+            {'kkharji/sqlite.lua', module = 'sqlite'},
+        },
+        config = function()
+            require('neoclip').setup()
+        end,
+    }
+    use {
+        'samodostal/image.nvim',
+        requires = {
+            'nvim-lua/plenary.nvim'
+        },
+    }
     use {
         'nvim-telescope/telescope.nvim', tag = '0.1.1',
         requires = { {'nvim-lua/plenary.nvim'} }

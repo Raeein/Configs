@@ -61,4 +61,8 @@ vim.keymap.set("n", "<leader>tc", ":tabclose<CR>")
 vim.keymap.set("n", "<leader>fml", "<cmd>CellularAutomaton make_it_rain<CR>")
 vim.keymap.set("n", "<leader>fc", ":lua vim.lsp.buf.format({ timeout_ms = 2000 })<CR>")
 
-vim.opt.termguicolors = true
+vim.keymap.set("n", "<leader>cb", ":Telescope neoclip<CR>")
+
+vim.keymap.set("n", "<leader>zz", ":ZenMode<CR>")
+
+

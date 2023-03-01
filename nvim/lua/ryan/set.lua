@@ -24,9 +24,15 @@ vim.opt.termguicolors = true
 
 vim.opt.scrolloff = 8
 vim.opt.clipboard = "unnamedplus"
--- vim.opt.signcolumn = "yes"
--- vim.opt.isfname:append("@-@")
+vim.opt.isfname:append("@-@")
 
 vim.opt.updatetime = 50
 
--- vim.opt.colorcolumn = "80"
+vim.o.t_Co = 256
+vim.opt.termguicolors = true
+
+vim.opt.spelllang = 'en_us'
+vim.opt.spell = true
+
+vim.cmd('autocmd VimEnter * Startify')
+
