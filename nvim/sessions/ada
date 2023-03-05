@@ -15,7 +15,7 @@ else
 endif
 badd +1 linkedlist.ads
 badd +35 linkedlist.adb
-badd +1 poly.adb
+badd +8 poly.adb
 badd +8 polylink.ads
 badd +54 polylink.adb
 badd +3 polymath.adb
@@ -142,18 +142,19 @@ setlocal fdn=20
 setlocal fen
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 18 - ((17 * winheight(0) + 21) / 42)
+let s:l = 7 - ((6 * winheight(0) + 21) / 42)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 18
-normal! 012|
+keepjumps 7
+normal! 023|
 wincmd w
 argglobal
 if bufexists(fnamemodify("~/Desktop/Guelph/W23-24/3190/cis3190_a2/polymath.adb", ":p")) | buffer ~/Desktop/Guelph/W23-24/3190/cis3190_a2/polymath.adb | else | edit ~/Desktop/Guelph/W23-24/3190/cis3190_a2/polymath.adb | endif
 if &buftype ==# 'terminal'
   silent file ~/Desktop/Guelph/W23-24/3190/cis3190_a2/polymath.adb
 endif
+balt ~/Desktop/Guelph/W23-24/3190/cis3190_a2/poly.adb
 setlocal fdm=manual
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -164,11 +165,11 @@ setlocal fdn=20
 setlocal fen
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 1 - ((0 * winheight(0) + 21) / 42)
+let s:l = 4 - ((3 * winheight(0) + 21) / 42)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 1
+keepjumps 4
 normal! 0
 wincmd w
 exe 'vert 1resize ' . ((&columns * 94 + 94) / 189)
