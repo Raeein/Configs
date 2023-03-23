@@ -28,6 +28,8 @@ vim.opt.isfname:append("@-@")
 
 vim.opt.updatetime = 50
 
+vim.opt.equalalways = true
+
 vim.o.t_Co = 256
 vim.opt.termguicolors = true
 

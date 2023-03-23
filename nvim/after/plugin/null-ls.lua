@@ -16,7 +16,6 @@ null_ls.setup({
         -- null_ls.builtins.formatting.clang_format,
         require("null-ls").builtins.formatting.clang_format.with({
             filetypes = { "c", "cpp", "objc", "objcpp" },
-            extra_args = { "--style=file" },
             extra_args = { "-fallback-style=Google", "-style=file" },
             file_path = "/Users/raeeinbagheri/.config/.clang-format",
         }),
@@ -25,5 +24,6 @@ null_ls.setup({
         null_ls.builtins.diagnostics.shellcheck,
         null_ls.builtins.diagnostics.eslint_d,
         null_ls.builtins.diagnostics.flake8,
+        null_ls.builtins.diagnostics.checkmake,
     },
 })
