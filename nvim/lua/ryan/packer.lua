@@ -18,7 +18,7 @@ return require('packer').startup(function(use)
     use 'jose-elias-alvarez/null-ls.nvim'
     use 'xiyaowong/nvim-transparent'
     use 'airblade/vim-rooter'
-    use 'ggandor/lightspeed.nvim'
+    use 'wintermute-cell/gitignore.nvim'
     use 'dstein64/vim-startuptime'
     use { 'nvim-lualine/lualine.nvim', requires = { 'kyazdani42/nvim-web-devicons', opt = true } }
     use { 'nvim-tree/nvim-tree.lua', requires = { 'nvim-tree/nvim-web-devicons', }}
