@@ -35,6 +35,5 @@ vim.opt.termguicolors = true
 
 vim.opt.spelllang = 'en_us'
 vim.opt.spell = true
-
-vim.cmd('autocmd VimEnter * Startify')
+-- vim.cmd('autocmd VimEnter * Startify')
 

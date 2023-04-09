@@ -65,4 +65,4 @@ vim.keymap.set("n", "<leader>cb", ":Telescope neoclip<CR>")
 
 vim.keymap.set("n", "<leader>zz", ":ZenMode<CR>")
 
-
+vim.keymap.set("n", "<leader><leader>x", "<cmd>lua vim.cmd('w') vim.cmd('source %')<CR>")
