@@ -23,7 +23,6 @@ return require('packer').startup(function(use)
     use 'jose-elias-alvarez/null-ls.nvim'
     use 'xiyaowong/nvim-transparent'
     use 'wintermute-cell/gitignore.nvim'
-    use 'dstein64/vim-startuptime'
     use { 'nvim-tree/nvim-tree.lua', requires = { 'nvim-tree/nvim-web-devicons', }}
     use { "windwp/nvim-autopairs", config = function() require("nvim-autopairs").setup {} end }
     use { 'numToStr/Comment.nvim', config = function() require('Comment').setup() end }
