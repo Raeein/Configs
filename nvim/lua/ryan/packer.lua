@@ -20,7 +20,6 @@ return require('packer').startup(function(use)
     use 'mhinz/vim-startify'
     -- Make it rain
     use 'eandrju/cellular-automaton.nvim'
-    use 'jose-elias-alvarez/null-ls.nvim'
     use 'xiyaowong/nvim-transparent'
     use 'wintermute-cell/gitignore.nvim'
     use { 'nvim-tree/nvim-tree.lua', requires = { 'nvim-tree/nvim-web-devicons', }}
@@ -34,16 +33,16 @@ return require('packer').startup(function(use)
     use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
     use { 'junegunn/fzf', run = ":call fzf#install()" }
     use { 'junegunn/fzf.vim' }
+    use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
     use {"folke/zen-mode.nvim"}
     use ({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
     use { "folke/todo-comments.nvim", requires = "nvim-lua/plenary.nvim", }
-    use { "folke/trouble.nvim", requires = "nvim-tree/nvim-web-devicons", config = function() require("trouble").setup { } end }
     use { 'brenoprata10/nvim-highlight-colors', config = function() require('nvim-highlight-colors').setup() end, }
     use { 'nvim-telescope/telescope.nvim', tag = '0.1.1', requires = { {'nvim-lua/plenary.nvim'} } }
     use { 'lewis6991/gitsigns.nvim', config = function() require('gitsigns').setup() end }
     use {
         'VonHeikemen/lsp-zero.nvim',
-        branch = 'v1.x',
+        branch = 'v2.x',
         requires = {
             -- LSP Support
             {'neovim/nvim-lspconfig'},             -- Required

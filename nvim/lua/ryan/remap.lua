@@ -55,13 +55,10 @@ vim.keymap.set("n", "<S-h>", ":bprevious<CR>")
 vim.keymap.set("n", "<leader>tn", ":tabnew<CR>")
 vim.keymap.set("n", "<leader>tc", ":tabclose<CR>")
 
--- vim.keymap.set("n", "<leader>ss", ":mksession! ~/.config/nvim/session.vim<CR>")
--- vim.keymap.set("n", "<leader>sr", ":source ~/.config/nvim/session.vim<CR>")
-
+-- make it rain baby
 vim.keymap.set("n", "<leader>fml", "<cmd>CellularAutomaton make_it_rain<CR>")
-vim.keymap.set("n", "<leader>fc", ":lua vim.lsp.buf.format({ timeout_ms = 2000 })<CR>")
 
-vim.keymap.set("n", "<leader>cb", ":Telescope neoclip<CR>")
+vim.keymap.set("n", "<leader>fc", ":lua vim.lsp.buf.format({ timeout_ms = 2000 })<CR>")
 
 vim.keymap.set("n", "<leader>zz", ":ZenMode<CR>")
 
