@@ -14,10 +14,14 @@ return require('packer').startup(function(use)
     use 'JoosepAlviste/nvim-ts-context-commentstring'
     use 'akinsho/toggleterm.nvim'
     use 'nvim-tree/nvim-web-devicons'
-    use 'andweeb/presence.nvim'
+    -- use 'andweeb/presence.nvim'
     use 'github/copilot.vim'
+    -- Current main scheme
     use 'folke/tokyonight.nvim'
+    -- Startup screen
     use 'mhinz/vim-startify'
+    -- Shows indentation lines
+    use { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} }
     -- Make it rain
     use 'eandrju/cellular-automaton.nvim'
     use 'xiyaowong/nvim-transparent'
@@ -38,7 +42,7 @@ return require('packer').startup(function(use)
     use ({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
     use { "folke/todo-comments.nvim", requires = "nvim-lua/plenary.nvim", }
     use { 'brenoprata10/nvim-highlight-colors', config = function() require('nvim-highlight-colors').setup() end, }
-    use { 'nvim-telescope/telescope.nvim', tag = '0.1.1', requires = { {'nvim-lua/plenary.nvim'} } }
+    use { 'nvim-telescope/telescope.nvim', tag = '0.1.5', requires = { {'nvim-lua/plenary.nvim'} } }
     use { 'lewis6991/gitsigns.nvim', config = function() require('gitsigns').setup() end }
     use {
         'VonHeikemen/lsp-zero.nvim',

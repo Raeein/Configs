@@ -64,8 +64,10 @@ lsp.configure("lua_ls", {
 lsp.configure("rust_analyzer", {
     settings = {
         ["rust-analyzer"] = {
-            checkOnSave = {
+            cargo = {
                 allFeatures = true,
+            },
+            checkOnSave = {
                 overrideCommand = {
                     "cargo", "clippy", "--workspace", "--message-format=json",
                     "--all-targets", "--all-features"
